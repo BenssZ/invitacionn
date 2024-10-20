@@ -1,0 +1,304 @@
+/* Estilos generales */
+body {
+    font-family: 'Georgia', serif;
+    color: #5a5a5a;
+    margin: 0;
+    padding: 0;
+    background-image: url('fotos/rosas.png'); /* Ruta de tu imagen de patrón */
+    background-repeat: repeat; /* Repite la imagen de fondo */
+    background-size: 65%; /* Mantiene el tamaño original de la imagen */
+}
+
+/* Encabezado */
+header {
+    position: relative;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #b59d89;
+    z-index: 1; 
+
+}
+
+/* Texto del encabezado */
+.texto-header {
+    position: relative;
+    z-index: 1;
+    color:  #a9a9a9;
+}
+
+/* Título con la fuente Allura */
+.titulo-allura {
+    font-family: 'Allura', cursive; /* Fuente Allura solo para este título */
+    font-size: 4em; /* Aumenta el tamaño del título */
+    margin: 0;
+    padding: 10px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5); /* Sombra para un mejor contraste */
+
+}
+
+/* Imagen con el recorte en arco invertido */
+.imagen-header {
+    position: relative; 
+    overflow: hidden; 
+}
+
+.imagen-header img {
+    width: 100%;
+    height: auto;
+    clip-path: ellipse(50% 80% at 50% 80%); /* Arco invertido en la parte superior */
+    transition: transform 0.3s; 
+}
+
+.imagen-header img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+/* Secciones generales */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con algo de transparencia */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más difusa */
+    border-radius: 15px; /* Bordes más redondeados */
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s; /* Transición suave al hacer hover */
+       color: #d3d3d3;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+/* Estilos para el texto de los títulos */
+h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+   color: #d3d3d3;
+    text-align: center; /* Centra el texto del subtítulo */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    border-bottom: 2px solid #b59d89; /* Línea decorativa debajo del subtítulo */
+    padding-bottom: 10px; /* Espacio entre el texto y la línea */
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Centra la lista */
+}
+
+li {
+    font-size: 1.5em;
+    margin: 10px 0;
+    position: relative;
+}
+
+li::before {
+    content: "•";
+    color: #b59d89;
+    font-size: 1.5em;
+    position: absolute;
+    left: -25px;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+input, select, button {
+    padding: 15px;
+    font-size: 1.2em;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus {
+    border: 2px solid #b59d89;
+    outline: none;
+}
+
+button {
+    background-color: #b59d89;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #a08976;
+    transform: translateY(-2px);
+}
+
+/* Botones */
+.boton-regalos, .boton-maps {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #b59d89;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.boton-regalos:hover, .boton-maps:hover {
+    background-color: #a08976;
+    transform: translateY(-2px);
+}
+
+/* Imágenes */
+.seccion-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+
+}
+
+.seccion-img:hover {
+    transform: scale(1.05);
+}
+
+/* Contador */
+#contador {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #b59d89;
+    text-align: center;
+
+    padding: 10px; /* Espacio dentro del contador */
+    border: 3px solid #b59d89; /* Bordes alrededor del contador */
+    border-radius: 10px; /* Bordes redondeados */
+    display: inline-block; /* Hace que el contador se ajuste al contenido */
+    background-color: #fff; /* Fondo blanco para destacar los números */
+    margin: 20px auto; /* Margen alrededor del contador */
+}
+
+/* Nombres de los novios */
+.nombres-novios h1 {
+    font-family: 'Allura', cursive; /* Usa la fuente Allura */
+    font-size: 2em; /* Tamaño grande para los nombres */
+    color: darkgray; /* Color de texto */
+    text-align: center; /* Centra los nombres */
+    margin: 20px 0; /* Espacio alrededor */
+  
+}
+
+/* Nombres de los novios */
+.frase h2 {
+   
+    font-size: 1.2em; /* Tamaño grande para los nombres */
+    text-align: center; /* Centra los nombres */
+    margin: 20px 0; /* Espacio alrededor */
+       color: #d3d3d3;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Sombra para resaltar */
+}
+/* Estilos para la sección de dedicatoria */
+#dedicatoria {
+    text-align: center; /* Centra el texto */
+    margin: 40px 0; /* Margen superior e inferior */
+
+}
+
+/* Estilos para la sección de dedicatoria */
+#dedicatoria {
+    text-align: center; /* Centra el texto */
+    margin: 40px auto; /* Margen superior e inferior y centrado horizontalmente */
+    padding: 40px 20px; /* Agrega relleno para el espacio interno */
+    max-width: 900px; /* Igualar el ancho máximo con otras secciones */
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con algo de transparencia */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más difusa */
+    border-radius: 15px; /* Bordes más redondeados */
+    color: #d3d3d3;
+}
+
+.nombre {
+    font-family: 'Allura', cursive; /* Fuente cursiva para los nombres */
+    font-size: 1.5em; /* Tamaño más grande para los nombres */
+    margin-bottom: 30px; /* Espacio debajo del nombre */
+    color: black;
+}
+
+/* Imagen superior */
+.imagen-superior {
+    width: 40%; /* Ajusta el ancho al 100% */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 20px; /* Espacio debajo de la imagen superior */
+}
+
+/* Imágenes inferiores */
+.imagen-inferior {
+    width: 20%; /* Ajusta el ancho de las imágenes inferiores */
+    height: auto; /* Mantiene la proporción */
+    margin: 20px auto; /* Espacio alrededor y centra la imagen */
+    display: block;
+}
+
+/* Estilos para la sección de padres */
+#padres {
+    text-align: center; /* Centra el texto */
+    margin: 40px 0; /* Margen superior e inferior */
+    color: #d3d3d3;
+}
+
+/* Estilos para la sección de padres */
+#padres {
+    text-align: center; /* Centra el texto */
+    margin: 40px auto; /* Margen superior e inferior y centrado horizontalmente */
+    padding: 40px 20px; /* Agrega relleno para el espacio interno */
+    max-width: 900px; /* Igualar el ancho máximo con otras secciones */
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con algo de transparencia */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más difusa */
+    border-radius: 15px; /* Bordes más redondeados */
+}
+
+.nombre {
+    font-family: 'Allura', cursive; /* Fuente cursiva para los nombres */
+    font-size: 2em; /* Tamaño más grande para los nombres */
+    margin-bottom: 20px; /* Espacio debajo del nombre */
+}
+
+/* Estilos para la imagen */
+.imagen {
+    text-align: center; /* Centra la imagen */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+.seccion-img {
+    width: 80%; /* Ancho de la imagen */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Transición para el efecto de hover */
+}
+
+.seccion-img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+#playPauseBtn {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #5a5a5a; /* Ajusta el color del botón */
+}
+audio {
+    display: none; /* Asegúrate de que el reproductor esté oculto */
+}
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente, si es necesario */
+    margin: 20px 0; /* Espacio alrededor del iframe */
+}

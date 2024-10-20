@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet"> <!-- Fuente Allura -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- Archivo de estilos -->
+</head>
+<body>
+    <header>
+        <div class="texto-header">
+            <h1 class="titulo-allura">¡Nos casamos!</h1> <!-- Solo este título tiene la fuente Allura -->
+            <div class="imagen-header">
+                <img src="fotos/imagen.jpg" alt="Imagen del evento" class="seccion-img">
+            </div>
+            <div class="nombres-novios">
+                <h1>Laura & Omar</h1>
+                <!-- Reproductor de audio oculto -->
+                <audio id="miAudio" src="fotos/videoplayback.mp3" type="audio/mp3"></audio>
+                <!-- Botón de Play/Pausa -->
+                <button id="playPauseBtn">▶︎•၊</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="evento">
+        <div class="frase">
+            <h2>“El amor jamás dejará de existir” - Corintos: 13:8</h2> <!-- Título arriba de la imagen -->
+        </div>
+        <h2>Detalles de la boda</h2>
+    </section>
+
+    <div class="imagen">
+        <img src="fotos/otra.jpg" alt="Imagen del evento" class="seccion-img">
+    </div>
+
+    <section id="dedicatoria">
+        <img src="fotos/rosasdos.png" alt="Imagen superior" class="imagen-superior">
+        <h1>"El amor no ve con los ojos, sino con el alma"</h1>
+        <p class="nombre">Ana Laura Corona Meza</p>
+        <h1 class="cita-pequena">"Si no eres tú el amor de mi vida, solo diré que me equivoqué de vida, pero no de amor"</h1>
+        <p class="nombre">Cesar Omar Luna Camiro</p>
+        <img src="fotos/anillos.png" alt="Imagen inferior 1" class="imagen-inferior">
+        <img src="fotos/rosasdos.png" alt="Imagen inferior 2" class="imagen-inferior">
+    </section>
+
+    <div class="imagen">
+        <img src="fotos/banca.jpg" alt="Imagen del evento" class="seccion-img">
+    </div>
+
+    <section id="padres">
+        <h1>Con la bendición de nuestros padres</h1>
+        <img src="fotos/vestido.png" alt="Imagen inferior 1" class="imagen-inferior">
+        <p class="nombre">Amalia Meza Badillo & Gabriel Corona Hernandez🎗</p>
+        <img src="fotos/trajes.png" alt="Imagen inferior 1" class="imagen-inferior">
+        <p class="nombre">Gloria Camiro Hernández & Magdaleno Luna Mendez 🎗</p>
+    </section>
+
+    <div class="imagen">
+        <img src="fotos/casa.jpg" alt="Imagen de la ubicación" class="seccion-img">
+    </div>
+
+    <section>
+        <div class="imagen">
+            <img src="fotos/fecah.jpg" alt="Imagen de la ubicación" class="seccion-img">
+        </div>
+        <div class="imagen">
+            <p><strong>Fecha:</strong> <span id="fecha-evento">Sábado 28 de diciembre de 2024</span></p>
+            <p><strong>Días restantes:</strong> <span id="contador"></span></p>
+        </div>
+    </section>
+
+    <section id="Ceremonia civil">
+        <img src="fotos/arco.png" alt="Imagen inferior 1" class="imagen-inferior">
+        <h2>Ceremonia civil</h2>
+        <p>Dirección</p>
+        <a href="https://maps.app.goo.gl/DDyLhNY7dsC6Cej49?g_st=iw" target="_blank" class="boton-maps">
+            Ver ubicación en Google Maps
+        </a>
+    </section>
+
+    <section id="itinerario">
+        <img src="imagen-itinerario.jpg" alt="Imagen de itinerario" class="seccion-img">
+        <h2>Itinerario del Día</h2>
+        <ul>
+            <li>15:00 - Ceremonia</li>
+            <li>15:30 - Recepción</li>
+            <li>18:00 - Fiesta</li>
+        </ul>
+    </section>
+
+ <section id="confirmacion">
+    <h2>Confirma tu Asistencia</h2>
+    <div class="iframe-container">
+        <!-- Iframe para el formulario de Google -->
+        <iframe src="https://forms.gle/x5hsnnXG3fNSpNc99" 
+            width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+    </div>
+</section>
+
+    <section id="regalos">
+        <h2>Mesas de Regalos</h2>
+        <div class="imagen">
+            <img src="fotos/mesare.jpg" alt="Imagen de regalos" class="seccion-img">
+        </div>
+        <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51531873/" target="_blank" class="boton-regalos">Ver nuestras mesas de regalos</a>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
